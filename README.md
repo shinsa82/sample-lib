@@ -35,3 +35,21 @@ $ poetry add pandas
 $ poetry add -D autopep8
 $ poetry show
 ```
+
+## Coding
+
+```shell
+poetry run pytest test
+poetry run autopep8 -iar src test
+```
+
+ここまでやったところで `sample-app` からのインストールを試してみる。
+
+## Build
+
+やはり、このままでは動かなかった。
+のでビルドしてみる。
+
+```shell
+$ poetry build
+```
