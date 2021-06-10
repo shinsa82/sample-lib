@@ -53,3 +53,9 @@ poetry run autopep8 -iar src test
 ```shell
 $ poetry build
 ```
+
+`dist/` 以下に source dist と wheel ができた。
+
+これでインポートを試してみる。
+
+なお、ビルド前のバージョンにはタグ `v1` を、ビルド後には `v2` を付けておくことにする。
