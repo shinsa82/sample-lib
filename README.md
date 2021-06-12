@@ -65,3 +65,5 @@ $ poetry build
 Poetry には現時点で Pipenv の `attr: __init__.py:__version__` みたいな、ソース中の値を動的に取ってくる仕組みがない。
 
 代替手段として `poetry-dynamic-versioning` がある。これは git のタグから `pyproject.toml` やその他のファイル内の文字列を動的に置換してくれる。基本的には `poetry build` の実行時に動作すると思われるが、CLI ツールとして明示的に起動することもできる。
+
+ファイルのほうの置換が動かない…
