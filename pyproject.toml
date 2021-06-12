@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "samplelib"
-version = "0.1.0"
+version = "0.0.0" # automatically injectred by poetry-dynamic-versioning
 description = "Sample package that are installed"
 authors = ["Shin Saito <shinsa@jp.ibm.com>"]
 license = "MIT"
@@ -15,6 +15,11 @@ autopep8 = "^1.5.7"
 
 [tool.poetry.scripts]
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
 build-backend = "poetry.core.masonry.api"
